@@ -1,0 +1,262 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+body {
+
+	font-family: arial, "Lato", sans-serif;
+	background-color: #fff;
+	scroll-behavior: smooth;
+
+}
+
+
+nav {
+	background-color: rgb(62, 69, 136);
+	scroll-margin-block: 0;
+	margin-top: auto;
+	display: flex;
+	flex-direction: column-reverse;
+	text-align: justify;
+}
+
+
+
+
+nav ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	float: right;
+
+}
+
+nav li {
+	margin: 0 10px;
+
+}
+
+nav a {
+	display: block;
+	color: rgb(12, 10, 10);
+	font-weight: bold;
+	padding: 10px;
+	text-decoration: none;
+	box-shadow: initial;
+
+}
+
+
+nav a:hover {
+	background-color: rgb(248, 247, 247);
+	align-content: center;
+
+}
+
+/* /// titulo/// */
+header {
+	display: flex;
+	align-items: center;
+	color: rgb(8, 8, 8);
+
+}
+
+header img {
+	display: flex;
+	margin-right: 20px;
+	max-width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	object-fit: cover;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: all 0.3;
+
+}
+
+header h1 {
+	font-size: 24px;
+	font-family: "Lato", sans-serif;
+}
+
+/* titulo */
+.nombre h1 {
+	display: flex;
+	font-family: "Lato", sans-serif;
+	flex-direction: row-reverse;
+	margin-top: 50px;
+	color: rgb(103, 103, 114);
+	border-color: #fff;
+	font-size: 25px;
+	line-height: 10;
+	margin: 10px;
+	margin-bottom: 5px;
+
+	text-align: center;
+
+
+}
+
+
+p {
+	font-family: "Lato", sans-serif;
+	font-size: 10px;
+	line-height: 1.5;
+	color: rgb(8, 7, 7);
+	padding: 10px;
+	margin: 0 auto;
+	max-width: 800px;
+	display: flex;
+	text-align: center;
+
+
+}
+
+.menu {
+	position: fixed;
+	text-align: justify;
+	align-items: flex-start;
+	text-transform: uppercase;
+	box-shadow: #fff;
+	margin-top: 0;
+	left: 0;
+	width: 150px;
+	height: 150%;
+	background-color: rgb(220, 223, 233);
+	color: #fff;
+
+}
+
+
+/* aqui uso grid - layout */
+.contenido {
+
+	display: flex;
+	height: auto;
+	width: 100%;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	grid-template-columns: 3, 1fr;
+	grid-template-rows: 100px;
+	color: red;
+
+
+}
+
+/* @media (max-width: 640px) {
+	.contenido {
+		grid-template-columns: repeat(auto-fill, 140px);
+	}
+} */
+
+
+.caja {
+
+	width: 150px;
+	height: auto;
+	border: 3px rgb(12, 11, 11) solid;
+	background-color: rgb(221, 227, 230);
+	margin: 30px;
+	text-align: center;
+	line-height: 150px;
+	list-style: none;
+	box-shadow: 10px 10px 5px rgb(207, 196, 196);
+
+
+}
+
+/* ------PIE DE LA PAGINA---- */
+.pie-de-paguina{
+	background-color: rgb(19, 15, 15);
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	height: 20%;
+}
+
+.pie-de-paguina.grupo-1 {
+
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	line-height: 40px;
+	margin-right: 10px;
+	grid-gap: 50px;
+	padding: 45px 0px;
+	transition: all 300ms ease;
+}
+
+.pie-de-paguina.grupo-1 .box figure {
+
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.pie-de-paguina.grupo-1 .box figure img {
+	width: 260%;
+}
+
+.pie-de-paguina.grupo-1 .box h2{
+color: #fff;
+margin-bottom: 25%;
+font-size: 20%;
+
+}
+
+.pie-de-paguina.grupo-2 .footer p {
+	height: 30px;
+	color: #efefef;
+	margin-bottom: 15%;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	 /* flex-direction: column;
+	 
+	align-content: center; */
+
+
+}
+ 
+
+
+
+/* .pie-pagina .grupo-2 {
+	background-color: black;
+	padding: 15px 10px;
+	color: #fff;
+	text-align: center;
+}
+
+
+.pie-pagina.ingreso {
+	align-content: space-around;
+	height: 25px;
+	color: #fff;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	flex-direction: row-reverse;
+
+}
+ */
+
+
+
+
+@media (max-width: 640px) {
+
+	.letrafooter {
+		grid-template-columns: repeat(auto-fill, 140px);
+	}
+}
